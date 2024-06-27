@@ -17,7 +17,6 @@ const Login = () => {
   });
 
   const processForm: SubmitHandler<Inputs> = async (data: any) => {
-    console.log(data);
     // let obj = {
     //   username: data.username,
     //   password: data.password,
@@ -31,7 +30,7 @@ const Login = () => {
         <div className="mb-5">Welcome Back</div>
         <div className="flex flex-col w-full justify-center gap-y-2 items-center">
           <form className="w-full" onSubmit={handleSubmit(processForm)}>
-            <div className="w-full relative mb-4">
+            {/* <div className="w-full relative mb-4">
               <input
                 type="text"
                 id="username"
@@ -43,7 +42,7 @@ const Login = () => {
               <label htmlFor="username" className="label-primary">
                 username
               </label>
-            </div>
+            </div> */}
             <div className="w-full relative mb-4">
               <input
                 type="text"
